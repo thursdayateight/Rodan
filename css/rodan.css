@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*MY STYLES*/
+
+/*BASE*/
+
+body {
+	color: white;
+	margin: 10px 0 30px 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	background: transparent url("../images/background.png") no-repeat center;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	text-shadow: 1px 1px 2px #000;
+}
+
+.clear {
+	clear: both;
+}
+
+.tagline {
+	width: 75%;
+	padding-top: 10px;
+	padding-right: 75px;
+	text-align: left;
+	margin: auto;
+	margin-bottom: 60px;
+}
+
+.contact {
+	margin: auto;
+	width: 80%;
+	padding: 120px 0;
+	text-align: center;
+}
+
+.calendar {
+	margin: auto;
+	padding: 120px;
+}
+
+
+/*Typography*/
+
+.std-text {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.medium-text {
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.large-text { 
+	font-size: 60px;
+	line-height: 68px;
+}
+
+.case-text {
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #ffb600;
+}
+
+.menu-header-text {
+	color: #ff2c00;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.active-link {
+	color: #ff2c00;
+}
+
+.hours {
+	color: #ffb600;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #ffb600;
+}
+
+
+/*MODULES*/
+
+nav {
+	float: left;
+	margin: 30px 0 0 25px;
+	display: inline;
+}
+
+header {
+	float: right;
+}
+
+.navigation {
+	float: left;
+	margin-right: 20px;
+}
+
+
+/*COMPONENTS*/
+
+/*Headings*/
+
+h1 { 
+	font-size: 90px;
+	line-height: 100px;
+	word-spacing: 10px;
+}
+
+h2 {
+	padding: 20px 0;
+	margin-top: 20px;
+	color: #ff2c00;
+}
+
+h3 {
+	padding: 20px 0;
+	/*margin-bottom: 10px;*/
+}
+
+.tagline-1 {
+	color: #00adef;
+}
+
+.tagline-2 {
+	margin-bottom: 80px;
+}
+
+.tagline-3 {
+	margin-bottom: 0px;
+}
+
+
+
+.tagline-home {
+	margin-top: 100px;
+}
+
+/*Text*/
+
+.address {
+	font-size: 22px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.address-main {
+	margin-right: 31px;
+}
+
+.address-top {
+	margin-top: 103px;
+}
+
+.address-homepage {
+	margin-right: none;
+}
+
+.text-no-details {
+	padding-top: 20px;
+}
+
+/*Lists*/
+
+dt {
+	padding: 20px 10px 0 0;
+}
+
+dd { 
+	padding: none;
+}
+
+li {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: left;
+	font-weight: normal
+}
+
+/*Images*/
+
+img {
+	margin-bottom: 10px;
+	/*box-shadow: 1px 1px 2px #000;*/
+}
+
+.sprite-social{
+    background: url("../images/sprite-social-blue.png") no-repeat 0 0;
+    color: transparent;
+    display: block;
+}
+
+.sprite-social a:hover{
+    background: url("../images/sprite-social-yellow.png") no-repeat 0 0;
+    color: transparent;
+    display: block;
+}
+
+.btn{
+    display: block;
+    float: left;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.facebook {
+	background-position: 0;
+}
+
+.twitter {
+	background-position: -200px 0;
+}
+
+.instagram {
+	background-position: -100px 0;
+}
+
+.social-images-large {
+	margin: auto;
+	width: 32%;
+}
+/*
+.social-images-small {
+	padding-left: 25px;
+	
+}*/
+
+.social-images-small-home {
+	padding-left: 56px;
+	margin-top: 5px;
+}
+
+.fixed-position {
+	position: fixed;
+	top: 10px;
+	right: 0px;
+}
+
+
+
+
+/*function jumpToAnchor(anchor){
+     location.href = location.href+"#"+ anchor;
+}*/
