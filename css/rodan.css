@@ -295,21 +295,6 @@ img {
 	right: 0px;
 }
 
-.slideshow
-{
-    position: relative;
-    width: 350px;
-    height: 150px;
-}
-.slideshow img
-{
-    position: absolute;
-    width: 350px;
-    height: 150px;
-    z-index:-1;
-}
-
-
 /*function jumpToAnchor(anchor){
      location.href = location.href+"#"+ anchor;
 }*/

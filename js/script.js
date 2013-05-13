@@ -1,22 +1,18 @@
-var images=new Array('http://images/baos.jpg/250x150','http://soup.jpg/250x150');
-var nextimage=0;
+var imgArr=new Array('../images/baos.jpg','../images/soup.jpg');
+var preloadArr = new Array();
+var i;
 
-doSlideshow();
-
-function doSlideshow()
-{
-    if($('.slideshowimage').length!=0)
-    {
-        $('.slideshowimage').fadeOut(500,function(){slideshowFadeIn();$(this).remove()});
-    }
-    else
-    {
-        slideshowFadeIn();
-    }
+for(i=0; i < imgArr.length; i++){
+    preloadArr[i] = new Image();
+    preloadArr[i].src = imgArr[i];
 }
-function slideshowFadeIn()
-{
-    $('.slideshow').prepend($('<img class="slideshowimage" src="'+images[nextimage++]+'" style="display:none">').fadeIn(500,function(){setTimeout(doSlideshow,1000);}));
-    if(nextimage>=images.length)
-        nextimage=0;
+
+var currImg = 1;
+var intID = setInterval(changeImg, 6000);
+ 
+/* image rotator */
+function changeImg(){
+ $('#mast-head').animate({opacity: 0}, 1000, function(){
+ $(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') top center no-repeat');
+ }).animate({opacity: 1}, 1000);
 }
