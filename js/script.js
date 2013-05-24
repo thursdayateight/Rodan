@@ -1,6 +1,6 @@
 $(document).ready(function(event){ 
 	$('.slideshow').cycle({
 		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-		speed: 3000
+		speed: 2000
 	});
 });
